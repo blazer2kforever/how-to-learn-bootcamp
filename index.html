@@ -29,21 +29,29 @@
         <p class="header__subtitle">
           Какие современные и эффективные подходы к обучению вы можете
           использовать в своей жизни?
-          <a href="#" target="_blank" class="header__link">Узнать &#8594;</a>
+          <a
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="header__link"
+            >Узнать &#8594;</a
+          >
         </p>
         <img
           src="./images/header-image.png"
-          alt="Картина Опять двойка"
+          alt="Иллюстрация: ученик-двоечник и его печальная мать"
           class="header__main-illustration"
         />
         <div class="header__square-pic"></div>
       </header>
 
       <main class="content">
-        <section class="description">
+        <section
+          class="description"
+          aria-label="Две колонки: заголовок и описание"
+        >
           <article class="two-columns">
-            <!-- Секция де-факто имеет заголовок, но он вложен в child-блок -->
-            <h4 class="two-columns__brief">Главные проблемы в обучении</h4>
+            <h2 class="two-columns__brief">Главные проблемы в обучении</h2>
             <div class="two-columns__main-text">
               <p class="two-columns__paragraph">
                 Ни в школе, ни в институте нас не учат тому, как правильно
@@ -118,7 +126,11 @@
         <section class="feynman" title="Изображение Ричарда Фейнмана">
           <h2 class="feynman__title">Метод Фейнмана</h2>
           <p class="feynman__subtitle">Выучить и не забыть.</p>
-          <a href="#" target="_blank" class="feynman__link"
+          <a
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="feynman__link"
             >Подробнее &#8594;
           </a>
         </section>
@@ -192,11 +204,10 @@
               </p>
             </li>
           </ul>
-          <img
-            src="./images/kaufman-triangle.svg"
-            alt="Иллюстрация: большой синий треугольник"
+          <div
             class="kaufman__triangle"
-          />
+            title="Иллюстрация: большой синий треугольник"
+          ></div>
         </section>
       </main>
       <footer class="footer">
@@ -209,49 +220,88 @@
             />
             <p class="footer__author">&copy; Фёдор Васильев</p>
           </div>
-          <div class="footer__column footer__column_content_info">
-            <div class="footer__column-heading">О Практикуме</div>
-            <nav class="footer__column-links">
-              <a href="#" target="_blank" class="footer__column-link"
-                >Главная</a
-              >
-              <a href="#" target="_blank" class="footer__column-link"
-                >Концепция</a
-              >
-              <a href="#" target="_blank" class="footer__column-link"
-                >Наставники</a
-              >
-            </nav>
-          </div>
-          <div class="footer__column footer__column_content_social">
-            <div class="footer__column-heading">Соцсети</div>
-            <nav class="footer__column-links">
-              <a href="#" target="_blank" class="footer__column-link">
-                <img
-                  src="./images/youtube-icon.svg"
-                  alt="Логотип YouTube"
-                  class="footer__social-icon"
-                />
-                Youtube
-              </a>
-              <a href="#" target="_blank" class="footer__column-link">
-                <img
-                  src="./images/vk_color_white.svg"
-                  alt="Логотип ВКонтакте"
-                  class="footer__social-icon"
-                />
-                ВКонтакте
-              </a>
-              <a href="#" target="_blank" class="footer__column-link">
-                <img
-                  src="./images/tiktok-icon.svg"
-                  alt="Логотип TikTok"
-                  class="footer__social-icon"
-                />
-                TikTok
-              </a>
-            </nav>
-          </div>
+          <nav class="footer__column footer__column_content_info">
+            <h2 class="footer__column-heading">О Практикуме</h2>
+            <ul class="footer__column-links">
+              <li>
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="footer__column-link"
+                  >Главная</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="footer__column-link"
+                  >Концепция</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="footer__column-link"
+                  >Наставники</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <nav class="footer__column footer__column_content_social">
+            <h2 class="footer__column-heading">Соцсети</h2>
+            <ul class="footer__column-links">
+              <li>
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="footer__column-link"
+                >
+                  <img
+                    src="./images/youtube-icon.svg"
+                    alt="Логотип YouTube"
+                    class="footer__social-icon"
+                  />
+                  Youtube
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="footer__column-link"
+                >
+                  <img
+                    src="./images/vk_color_white.svg"
+                    alt="Логотип ВКонтакте"
+                    class="footer__social-icon"
+                  />
+                  ВКонтакте
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="footer__column-link"
+                >
+                  <img
+                    src="./images/tiktok-icon.svg"
+                    alt="Логотип TikTok"
+                    class="footer__social-icon"
+                  />
+                  TikTok
+                </a>
+              </li>
+            </ul>
+          </nav>
         </div>
       </footer>
     </div>
